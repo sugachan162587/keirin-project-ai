@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI成績レポート - 2025-08-21 | Analyst Collective</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; line-height: 1.6; margin: 0; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 960px; margin: 20px auto; background: #fff; padding: 20px 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #0d47a1; }
+        h1 { border-bottom: 2px solid #0d47a1; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.95em; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; text-align: center; }
+        td { text-align: right; }
+        td:first-child { text-align: left; font-weight: bold; }
+        .summary-box { background-color: #e3f2fd; border-left: 5px solid #1976d2; padding: 15px; margin-bottom: 20px; }
+        .profit { color: green; font-weight: bold; }
+        .loss { color: red; font-weight: bold; }
+        .even { color: black; }
+        footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI成績レポート (2025-08-21)</h1>
+
+        <div class="summary-box">
+            <h2>総合収支</h2>
+            <p><strong>総投資額:</strong> 2,739,000 円</p>
+            <p><strong>総回収額:</strong> 251,700 円</p>
+            <p><strong>トータル収支:</strong> <span class="loss">-2,487,300 円</span></p>
+            <p><strong>総合回収率:</strong> <span class="loss">9.19 %</span></p>
+        </div>
+
+        <h2>モデル別 成績一覧</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>モデル名</th>
+                    <th>回収率 (%)</th>
+                    <th>的中率 (%)</th>
+                    <th>収支 (円)</th>
+                    <th>投資 (円)</th>
+                    <th>回収 (円)</th>
+                    <th>的中/予測数</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td><span class="loss">20.25</span></td>
+                    <td>60.24</td>
+                    <td><span class="loss">-198,570</span></td>
+                    <td>249,000</td>
+                    <td>50,430</td>
+                    <td style="text-align: center;">50 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td><span class="loss">3.49</span></td>
+                    <td>8.43</td>
+                    <td><span class="loss">-240,320</span></td>
+                    <td>249,000</td>
+                    <td>8,680</td>
+                    <td style="text-align: center;">7 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td><span class="loss">39.70</span></td>
+                    <td>13.25</td>
+                    <td><span class="loss">-150,140</span></td>
+                    <td>249,000</td>
+                    <td>98,860</td>
+                    <td style="text-align: center;">11 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>catboost_target-3連単_period-3y_auc0.7612</td>
+                    <td><span class="loss">3.12</span></td>
+                    <td>2.41</td>
+                    <td><span class="loss">-241,240</span></td>
+                    <td>249,000</td>
+                    <td>7,760</td>
+                    <td style="text-align: center;">2 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td><span class="loss">5.56</span></td>
+                    <td>8.43</td>
+                    <td><span class="loss">-235,150</span></td>
+                    <td>249,000</td>
+                    <td>13,850</td>
+                    <td style="text-align: center;">7 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>lightgbm_target-2車単_period-3y_auc0.7873</td>
+                    <td><span class="loss">2.47</span></td>
+                    <td>2.41</td>
+                    <td><span class="loss">-242,850</span></td>
+                    <td>249,000</td>
+                    <td>6,150</td>
+                    <td style="text-align: center;">2 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td><span class="loss">6.16</span></td>
+                    <td>10.84</td>
+                    <td><span class="loss">-233,650</span></td>
+                    <td>249,000</td>
+                    <td>15,350</td>
+                    <td style="text-align: center;">9 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>lightgbm_target-3連単_period-3y_auc0.7596</td>
+                    <td><span class="loss">4.84</span></td>
+                    <td>2.41</td>
+                    <td><span class="loss">-236,940</span></td>
+                    <td>249,000</td>
+                    <td>12,060</td>
+                    <td style="text-align: center;">2 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>tabnet_target-2車単_period-3y_auc0.7741</td>
+                    <td><span class="loss">9.37</span></td>
+                    <td>4.82</td>
+                    <td><span class="loss">-225,680</span></td>
+                    <td>249,000</td>
+                    <td>23,320</td>
+                    <td style="text-align: center;">4 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>xgboost_target-2車単_period-3y_auc0.7855</td>
+                    <td><span class="loss">0.00</span></td>
+                    <td>0.00</td>
+                    <td><span class="loss">-249,000</span></td>
+                    <td>249,000</td>
+                    <td>0</td>
+                    <td style="text-align: center;">0 / 83</td>
+                </tr>
+                
+                <tr>
+                    <td>xgboost_target-3連単_period-3y_auc0.7577</td>
+                    <td><span class="loss">6.12</span></td>
+                    <td>2.41</td>
+                    <td><span class="loss">-233,760</span></td>
+                    <td>249,000</td>
+                    <td>15,240</td>
+                    <td style="text-align: center;">2 / 83</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <h2>的中レース一覧</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>レースID</th>
+                    <th>モデル名</th>
+                    <th>券種</th>
+                    <th>的中組み合わせ</th>
+                    <th>払戻金 (円)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020005</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">6-3-7</td>
+                    <td class="profit">69,060</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020001</td>
+                    <td style="text-align: left;">tabnet_target-2車単_period-3y_auc0.7741</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-6</td>
+                    <td class="profit">18,420</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010007</td>
+                    <td style="text-align: left;">xgboost_target-3連単_period-3y_auc0.7577</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">4-2-1</td>
+                    <td class="profit">14,860</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010012</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-3y_auc0.7596</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">5-3-1</td>
+                    <td class="profit">11,170</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020006</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">6-5-1</td>
+                    <td class="profit">10,110</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020005</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">6-3</td>
+                    <td class="profit">8,040</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020003</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-3-2</td>
+                    <td class="profit">7,570</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010006</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-6</td>
+                    <td class="profit">6,790</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020004</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">2-3-5</td>
+                    <td class="profit">6,320</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010005</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-3y_auc0.7612</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">3-2-1</td>
+                    <td class="profit">5,730</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020007</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">3-7-2</td>
+                    <td class="profit">5,460</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030006</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-2</td>
+                    <td class="profit">4,520</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020008</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-7</td>
+                    <td class="profit">4,500</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020006</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-3y_auc0.7873</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">6-5</td>
+                    <td class="profit">4,280</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010005</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-5-2</td>
+                    <td class="profit">3,590</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010004</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-3</td>
+                    <td class="profit">3,550</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">4-7</td>
+                    <td class="profit">3,530</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010008</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-4</td>
+                    <td class="profit">3,350</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010002</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-5</td>
+                    <td class="profit">3,050</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010005</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-2</td>
+                    <td class="profit">3,010</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030009</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-4-5</td>
+                    <td class="profit">2,940</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010003</td>
+                    <td style="text-align: left;">tabnet_target-2車単_period-3y_auc0.7741</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-2</td>
+                    <td class="profit">2,840</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010009</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-4</td>
+                    <td class="profit">2,730</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010002</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-2</td>
+                    <td class="profit">2,160</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020002</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-3y_auc0.7612</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">2-3-7</td>
+                    <td class="profit">2,030</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010012</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-3</td>
+                    <td class="profit">1,890</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030011</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">6-2</td>
+                    <td class="profit">1,880</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010011</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-3y_auc0.7873</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-7</td>
+                    <td class="profit">1,870</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030008</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-1</td>
+                    <td class="profit">1,790</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020007</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-7</td>
+                    <td class="profit">1,570</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010011</td>
+                    <td style="text-align: left;">tabnet_target-2車単_period-3y_auc0.7741</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-7</td>
+                    <td class="profit">1,550</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010002</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-2</td>
+                    <td class="profit">1,530</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010006</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">3-1-2</td>
+                    <td class="profit">1,520</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030002</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-4</td>
+                    <td class="profit">1,480</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020012</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-1-2</td>
+                    <td class="profit">1,480</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020003</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-3</td>
+                    <td class="profit">1,270</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010006</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-5-1</td>
+                    <td class="profit">1,190</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-3</td>
+                    <td class="profit">1,160</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010003</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">3-2-1</td>
+                    <td class="profit">1,020</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010007</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-3y_auc0.7596</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">1-2-3</td>
+                    <td class="profit">890</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020006</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">6-5</td>
+                    <td class="profit">780</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010005</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-4</td>
+                    <td class="profit">710</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020007</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">5-6-1</td>
+                    <td class="profit">690</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010002</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">1-3-4</td>
+                    <td class="profit">690</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020010</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">4-1</td>
+                    <td class="profit">660</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030007</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-2</td>
+                    <td class="profit">620</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030005</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-7</td>
+                    <td class="profit">570</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020005</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-3</td>
+                    <td class="profit">560</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020007</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-2-5</td>
+                    <td class="profit">540</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020010</td>
+                    <td style="text-align: left;">tabnet_target-2車単_period-3y_auc0.7741</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-2</td>
+                    <td class="profit">510</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030004</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-2</td>
+                    <td class="profit">500</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010005</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-5</td>
+                    <td class="profit">500</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020003</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-3</td>
+                    <td class="profit">490</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010003</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-3</td>
+                    <td class="profit">460</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010001</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">1-3-2</td>
+                    <td class="profit">460</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010006</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-5</td>
+                    <td class="profit">450</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020009</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-1</td>
+                    <td class="profit">440</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010007</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">4-1-5</td>
+                    <td class="profit">430</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020007</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-6</td>
+                    <td class="profit">410</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020006</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-7</td>
+                    <td class="profit">410</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020002</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-3</td>
+                    <td class="profit">410</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010006</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-1</td>
+                    <td class="profit">400</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020001</td>
+                    <td style="text-align: left;">xgboost_target-3連単_period-3y_auc0.7577</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">3-6-7</td>
+                    <td class="profit">380</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-3</td>
+                    <td class="profit">380</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020011</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-3</td>
+                    <td class="profit">350</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4720250819030010</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-7</td>
+                    <td class="profit">350</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020011</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-1</td>
+                    <td class="profit">330</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-6</td>
+                    <td class="profit">320</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010007</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-2</td>
+                    <td class="profit">310</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020009</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">3-7-2</td>
+                    <td class="profit">300</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020003</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">5-3-1</td>
+                    <td class="profit">290</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010004</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-1</td>
+                    <td class="profit">290</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010004</td>
+                    <td style="text-align: left;">catboost_target-3連単_period-1y_auc0.7509</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">1-5-3</td>
+                    <td class="profit">280</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020009</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-7</td>
+                    <td class="profit">270</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010008</td>
+                    <td style="text-align: left;">lightgbm_target-3連単_period-1y_auc0.7500</td>
+                    <td style="text-align: center;">3連単</td>
+                    <td style="text-align: center;">7-3-4</td>
+                    <td class="profit">270</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020012</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-1</td>
+                    <td class="profit">270</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010003</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-4</td>
+                    <td class="profit">250</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010002</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-3</td>
+                    <td class="profit">250</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-3</td>
+                    <td class="profit">240</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010003</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">3-2</td>
+                    <td class="profit">240</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020003</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-3</td>
+                    <td class="profit">230</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010008</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-3</td>
+                    <td class="profit">230</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-2</td>
+                    <td class="profit">230</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010007</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">4-1</td>
+                    <td class="profit">230</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020012</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-1</td>
+                    <td class="profit">210</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2620250820020007</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-2</td>
+                    <td class="profit">200</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2320250820020004</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-4</td>
+                    <td class="profit">190</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010006</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-2</td>
+                    <td class="profit">170</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010001</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">2-5</td>
+                    <td class="profit">170</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010009</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-3y_auc0.7890</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-1</td>
+                    <td class="profit">170</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010009</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">5-3</td>
+                    <td class="profit">160</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">4620250821010010</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">4-1</td>
+                    <td class="profit">160</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8120250820020005</td>
+                    <td style="text-align: left;">lightgbm_target-2車単_period-1y_auc0.7815</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">7-1</td>
+                    <td class="profit">160</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">2120250821010008</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-2</td>
+                    <td class="profit">150</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">5320250821010004</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-5</td>
+                    <td class="profit">140</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: left;">8520250821010008</td>
+                    <td style="text-align: left;">catboost_target-2車単_period-1y_auc0.7836</td>
+                    <td style="text-align: center;">2車単</td>
+                    <td style="text-align: center;">1-2</td>
+                    <td class="profit">140</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <footer>
+            <p>&copy; 2024 Analyst Collective</p>
+        </footer>
+    </div>
+</body>
+</html>
